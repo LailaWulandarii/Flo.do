@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('buket', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->text('deskripsi')->nullable();
+            $table->decimal('harga', 10, 2)->nullable();
+            $table->enum('jenis', ['paket', 'kustom']);
+            $table->string('');
             $table->timestamps();
         });
     }
