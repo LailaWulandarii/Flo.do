@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('buket_kustom', function (Blueprint $table) {
+        Schema::create('custom_bouquet', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -22,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('buket_kustom');
+        Schema::dropIfExists('custom_bouquet');
     }
 };
