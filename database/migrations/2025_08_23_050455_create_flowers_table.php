@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('flowers', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('foto');
+            $table->text('foto');
             $table->string('deskripsi');
             $table->decimal('harga', 10, 2);
             $table->integer('stok');
