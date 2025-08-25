@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('additional_foto_studio', function (Blueprint $table) {
+        Schema::create('additionals', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -22,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('additional_foto_studio');
+        Schema::dropIfExists('additionals');
     }
 };
